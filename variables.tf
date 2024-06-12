@@ -15,15 +15,13 @@ variable "access_logging_bucket_acl" {
 }
 
 variable "access_logging_bucket_enable_versioning" {
-  type        = bool
   description = "(optional) The boolean value enabling (true) or disabling (false) versioning on the access logging bucket"
-  default     = true
+  default     = "Enabled"
 }
 
 variable "access_logging_bucket_enable_backup" {
-  type        = bool
   description = "(optional) The boolean value enabling (true) or disabling (false) backups to glacier on the access logging bucket"
-  default     = true
+  default     = "Enabled"
 }
 
 variable "access_logging_bucket_backup_days" {
@@ -120,15 +118,13 @@ variable "logging_bucket_acl" {
 }
 
 variable "logging_bucket_enable_versioning" {
-  type        = bool
   description = "(optional) The boolean value enabling (true) or disabling (false) versioning on the logging bucket"
-  default     = true
+  default     = "Enabled"
 }
 
 variable "logging_bucket_enable_backup" {
-  type        = bool
   description = "(optional) The boolean value enabling (true) or disabling (false) backups to glacier on the logging bucket"
-  default     = true
+  default     = "Enabled"
 }
 
 variable "logging_bucket_backup_days" {
